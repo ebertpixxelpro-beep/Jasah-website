@@ -22,7 +22,7 @@
 
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:wght@300;400;600&family=Marcellus&display=swap"
         rel="stylesheet">
 
     <!-- FontAwesome -->
@@ -35,66 +35,149 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-white">
-        <div class="container">
-            <a class="navbar-brand text-primary fw-bold" href="#">
-                <i class="fas fa-leaf me-2"></i>FLOWRA
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand text-primary fw-bold d-flex align-items-center" href="#">
+                <i class="fas fa-layer-group me-2 fa-lg"></i>
+                <span>LUMORA<span class="text-white fw-light ms-2 text-uppercase small"
+                        style="letter-spacing: 2px;">Webworks</span></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Produk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Galeri</a></li>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link text-nowrap mx-2" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap mx-2" href="#about">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap mx-2" href="#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap mx-2" href="#products">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link text-nowrap mx-2" href="#portfolio">Galeri</a></li>
                 </ul>
-                <a href="https://wa.me/6281234567890" class="btn btn-primary ms-lg-3 rounded-pill px-4">Hubungi Kami</a>
+                <a href="https://wa.me/6281259953779"
+                    class="btn btn-primary ms-lg-4 rounded-pill px-4 text-nowrap shadow-sm">Hubungi Kami</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h1 class="display-4 fw-bold mb-3">Kembangkan Bisnis Anda Bersama <span
-                            class="text-primary">Flowra</span></h1>
-                    <p class="lead text-muted mb-4">Kami membantu Anda mencapai potensi maksimal dengan strategi digital
-                        yang terukur dan desain yang memukau.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#about" class="btn btn-primary btn-lg rounded-pill px-5">Mulai Sekarang</a>
-                        <a href="#services" class="btn btn-outline-dark btn-lg rounded-pill px-5">Pelajari Lebih
-                            Lanjut</a>
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="hero"
+        class="position-relative d-flex align-items-center justify-content-center text-center text-lg-start"
+        style="background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%); min-height: 100vh; padding-top: 120px; padding-bottom: 80px; overflow-x: hidden;">
+
+        <!-- Background Decorations (Desktop) -->
+        <div class="position-absolute top-0 end-0 translate-middle-y rounded-circle opacity-10 blur-3 d-none d-lg-block"
+            style="width: 600px; height: 600px; background: var(--accent-gold); filter: blur(120px);"></div>
+        <div class="position-absolute bottom-0 start-0 translate-middle rounded-circle opacity-10 blur-3 d-none d-lg-block"
+            style="width: 400px; height: 400px; background: var(--accent-gold); filter: blur(100px);"></div>
+
+        <!-- Mobile Background (Visible only on mobile) -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-lg-none" style="z-index: 1;">
+            <div class="position-absolute top-50 start-50 translate-middle rounded-circle opacity-20 blur-3"
+                style="width: 300px; height: 300px; background: var(--accent-gold); filter: blur(80px);"></div>
+            <img src="https://placehold.co/600x800/050505/141414?text=Mobile+App+Design"
+                class="w-100 h-100 object-fit-cover opacity-50" alt="Mobile Background">
+        </div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 text-center text-lg-start pt-4 pt-lg-0">
+                    <span
+                        class="d-inline-block py-1 px-3 rounded-pill border border-dark bg-dark bg-opacity-50 text-white small text-uppercase mb-3 shadow-sm animate-fade-in-up"
+                        style="border-color: rgba(212, 175, 55, 0.3) !important; letter-spacing: 2px;">
+                        <i class="fas fa-crown text-warning me-2"></i>Premium Web Agency
+                    </span>
+                    <h1 class="display-3 fw-bold text-white mb-4 animate-fade-in-up delay-100"
+                        style="font-family: var(--font-display); line-height: 1.2;">
+                        Wujudkan Website <br>
+                        <span class="text-transparent bg-clip-text"
+                            style="background: linear-gradient(to right, #D4AF37, #F2F0E4, #D4AF37); -webkit-background-clip: text; color: transparent; background-size: 200% auto; animation: shine 5s infinite;">Impian
+                            Bisnis Anda</span>
+                    </h1>
+                    <p class="lead text-white-50 mb-5 animate-fade-in-up delay-200"
+                        style="max-width: 500px; margin-left: auto; margin-right: auto;">
+                        Transformasi digital dengan desain eksklusif yang memikat pelanggan. Tingkatkan kredibilitas dan
+                        omzet bisnis Anda sekarang.
+                    </p>
+                    <div
+                        class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start animate-fade-in-up delay-300">
+                        <a href="#products"
+                            class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg hover-scale fw-bold text-uppercase d-flex align-items-center justify-content-center">
+                            Lihat Paket <i class="fas fa-arrow-right ms-2 small"></i>
+                        </a>
+                        <a href="https://wa.me/6281259953779"
+                            class="btn btn-outline-light btn-lg rounded-pill px-5 hover-scale fw-bold text-uppercase d-flex align-items-center justify-content-center"
+                            style="border-width: 2px;">
+                            <i class="fab fa-whatsapp me-2"></i> Konsultasi
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div
+                        class="mt-5 d-flex align-items-center justify-content-center justify-content-lg-start gap-4 animate-fade-in-up delay-400">
+                        <div class="d-flex align-items-center text-white-50 small">
+                            <i class="fas fa-check-circle text-success me-2"></i> Garansi 3 Bulan
+                        </div>
+                        <div class="d-flex align-items-center text-white-50 small">
+                            <i class="fas fa-check-circle text-success me-2"></i> SEO Optimized
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://placehold.co/600x400/2E8B57/white?text=Flowra+Hero+Image" alt="Flowra Hero Image"
-                        class="img-fluid w-100">
+
+                <!-- Desktop Only Image -->
+                <div class="col-lg-6 position-relative d-none d-lg-block">
+                    <!-- Hero Image / Visual -->
+                    <div class="position-relative animate-float" style="z-index: 1;">
+                        <img src="https://placehold.co/800x600/0A0A0A/D4AF37?text=Premium+Workspace"
+                            alt="Web Design Workspace" class="img-fluid rounded-4 shadow-lg border border-dark w-100"
+                            style="box-shadow: 0 20px 50px rgba(0,0,0,0.5) !important;">
+
+                        <!-- Floating Badge (Repositioned for Mobile Safety) -->
+                        <div class="position-absolute bottom-0 start-0 m-3 bg-dark p-3 rounded-3 shadow-lg border border-secondary animate-fade-in-up delay-500"
+                            style="width: 180px; backdrop-filter: blur(10px); transform: none;">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="bg-primary rounded-circle p-2 me-2 d-flex align-items-center justify-content-center"
+                                    style="width: 30px; height: 30px;">
+                                    <i class="fas fa-rocket text-dark small" style="font-size: 12px;"></i>
+                                </div>
+                                <span class="fw-bold text-white small" style="font-size: 12px;">High Performance</span>
+                            </div>
+                            <div class="progress" style="height: 4px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 98%"
+                                    aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Scroll Down (Visible Desktop Only) -->
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 animate-bounce d-none d-lg-block">
+            <a href="#about" class="text-white-50 hover-gold">
+                <i class="fas fa-chevron-down fa-2x"></i>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-light">
+    <section id="about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="https://placehold.co/600x400/333/white?text=About+Us" alt="Tentang Flowra"
+                    <img src="https://placehold.co/600x400/141414/D4AF37?text=Arsitek+Digital" alt="Tentang Flowra"
                         class="img-fluid rounded-3 shadow" loading="lazy">
                 </div>
                 <div class="col-lg-6">
                     <span class="text-primary fw-bold text-uppercase">Tentang Kami</span>
-                    <h2 class="mb-4">Siapa Kami?</h2>
-                    <p>Flowra adalah agensi digital yang berfokus pada pertumbuhan bisnis melalui inovasi teknologi dan
-                        strategi pemasaran yang efektif. Tim kami terdiri dari para ahli yang berdedikasi untuk
-                        memberikan hasil terbaik bagi klien kami.</p>
-                    <p class="mb-4">Kami percaya bahwa setiap bisnis memiliki cerita unik, dan kami ada di sini untuk
-                        membantu Anda menceritakannya kepada dunia.</p>
+                    <h2 class="mb-4">Arsitek Digital Anda</h2>
+                    <p>Flowra bukan sekadar agensi, kami adalah mitra strategis dalam membangun kehadiran digital Anda.
+                        Kami spesialis dalam merancang website yang tidak hanya indah secara visual, tetapi juga
+                        fungsional dan menghasilkan konversi.</p>
+                    <p class="mb-4">Dengan sentuhan estetika Art Deco yang elegan dan teknologi terkini, kami memastikan
+                        brand Anda tampil beda dan berkelas di tengah kompetisi digital.</p>
 
                     <div class="row g-4">
                         <div class="col-md-6">
@@ -134,23 +217,50 @@
                 <div class="col-md-4">
                     <div class="service-card text-center h-100">
                         <i class="fas fa-laptop-code service-icon"></i>
-                        <h4>Web Development</h4>
-                        <p class="text-muted">Pembuatan website responsif dan performa tinggi untuk bisnis Anda.</p>
+                        <h4>Website Company Profile</h4>
+                        <p class="text-muted">Bangun kredibilitas perusahaan dengan website profil yang elegan,
+                            informatif, dan responsif di segala perangkat.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-card text-center h-100">
-                        <i class="fas fa-chart-line service-icon"></i>
-                        <h4>Digital Marketing</h4>
-                        <p class="text-muted">Strategi pemasaran yang terukur untuk meningkatkan jangkauan dan konversi.
+                        <i class="fas fa-store service-icon"></i>
+                        <h4>Toko Online / E-Commerce</h4>
+                        <p class="text-muted">Kembangkan bisnis retail Anda dengan platform toko online yang aman, mudah
+                            dikelola, dan siap berjualan 24/7.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-card text-center h-100">
-                        <i class="fas fa-paint-brush service-icon"></i>
-                        <h4>UI/UX Design</h4>
-                        <p class="text-muted">Desain antarmuka yang menarik dan pengalaman pengguna yang intuitif.</p>
+                        <i class="fas fa-magic service-icon"></i>
+                        <h4>Redesign & Optimasi</h4>
+                        <p class="text-muted">Perbarui tampilan website lama Anda menjadi lebih modern, cepat, dan
+                            SEO-friendly untuk performa maksimal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center h-100">
+                        <i class="fas fa-search-dollar service-icon"></i>
+                        <h4>SEO & Google Ads</h4>
+                        <p class="text-muted">Tingkatkan visibilitas bisnis Anda di mesin pencari. Kami bantu website
+                            Anda tampil di halaman pertama Google.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center h-100">
+                        <i class="fas fa-palette service-icon"></i>
+                        <h4>UI/UX Design & Branding</h4>
+                        <p class="text-muted">Desain visual yang memukau dan identitas brand yang kuat untuk memikat
+                            pelanggan Anda dengan pengalaman terbaik.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center h-100">
+                        <i class="fas fa-layer-group service-icon"></i>
+                        <h4>Aplikasi Web Kustom</h4>
+                        <p class="text-muted">Solusi sistem informasi berbasis web yang dirancang khusus untuk efisiensi
+                            operasional bisnis Anda.</p>
                     </div>
                 </div>
             </div>
@@ -160,139 +270,323 @@
     <!-- Call to Action 1 -->
     <section class="cta-primary text-center">
         <div class="container position-relative">
-            <h2 class="mb-3">Siap Mengubah Bisnis Anda?</h2>
-            <p class="mb-4">Jangan biarkan kompetitor mendahului Anda. Konsultasikan kebutuhan digital Anda bersama tim
-                ahli kami sekarang juga.</p>
-            <a href="https://wa.me/6281234567890" target="_blank"
-                class="btn btn-light rounded-circle shadow-sm d-inline-flex align-items-center justify-content-center"
-                style="color: var(--primary-color); width: 80px; height: 80px; font-size: 2.5rem; transition: transform 0.3s ease;">
-                <i class="fab fa-whatsapp"></i>
+            <h2 class="mb-3">Ingin Website Sekelas Sultan?</h2>
+            <p class="mb-4">Jangan biarkan brand Anda terlihat biasa saja. Konsultasikan kebutuhan website premium Anda
+                sekarang juga.</p>
+            <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-primary btn-lg px-5 py-3 mt-4">
+                <i class="fab fa-whatsapp me-2"></i> Chat WhatsApp
             </a>
         </div>
     </section>
 
     <!-- Products Section (Now Website Services) -->
-    <section id="products" class="bg-white">
+    <!-- Products Section (Website Services) -->
+    <section id="products">
         <div class="container">
-            <div class="pricing-container shadow-sm">
+            <div class="pricing-container position-relative overflow-hidden">
+                <!-- Decorative Circle -->
+                <div class="position-absolute top-0 end-0 translate-middle p-5 bg-warning rounded-circle blur-3 d-none d-md-block"
+                    style="width: 300px; height: 300px; z-index: 0; opacity: 0.1;"></div>
+
                 <!-- Header Area -->
-                <div class="row mb-5">
-                    <div class="col-lg-6 d-flex flex-column justify-content-center">
-                        <div class="d-flex justify-content-between mb-2 small text-muted font-monospace">
-                            <span>Yes or no</span>
-                            <span>2026</span>
+                <div class="row mb-5 position-relative align-items-center" style="z-index: 1;">
+                    <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div class="d-flex justify-content-between align-items-center mb-3 small text-white-50 font-monospace border-bottom pb-2 mx-auto mx-lg-0"
+                            style="max-width: 300px; border-color: var(--accent-gold) !important; letter-spacing: 2px;">
+                            <span>EST. 2026</span>
+                            <span>OFFICIAL</span>
                         </div>
-                        <h1 class="pricing-header-text mb-0">website</h1>
-                        <h2 class="pricing-sub-text fst-italic">services</h2>
+                        <h1 class="pricing-header-text mb-0 display-3 fw-bold animate-fade-in-up"
+                            style="background: linear-gradient(to right, #D4AF37, #F2F0E4, #D4AF37); -webkit-background-clip: text; color: transparent; background-size: 200% auto; animation: shine 3s linear infinite; line-height: 0.9;">
+                            WEBSITE
+                        </h1>
+                        <h2 class="pricing-sub-text fst-italic display-4 text-white animate-fade-in-up delay-100"
+                            style="font-family: var(--font-display);">Services</h2>
+                        <p class="mt-4 text-light lead animate-fade-in-up delay-200 mx-auto mx-lg-0"
+                            style="font-family: var(--font-body); max-width: 450px; opacity: 0.9;">
+                            Pilih paket layanan yang sesuai dengan kebutuhan bisnis Anda. Transparan, profesional, dan
+                            berorientasi hasil.
+                        </p>
+                        <div
+                            class="mt-4 d-flex gap-3 justify-content-center justify-content-lg-start animate-fade-in-up delay-300">
+                            <div
+                                class="d-flex align-items-center text-white small px-3 py-2 rounded-pill bg-dark border border-secondary">
+                                <i class="fas fa-star text-warning me-2"></i> 5.0 Rating
+                            </div>
+                            <div
+                                class="d-flex align-items-center text-white small px-3 py-2 rounded-pill bg-dark border border-secondary">
+                                <i class="fas fa-users text-primary me-2"></i> 100+ Clients
+                            </div>
+                        </div>
+
+                        <!-- Mobile Decorative Visual -->
+                        <div class="d-lg-none mt-5">
+                            <div class="position-relative d-inline-block p-4 rounded-4 border border-secondary bg-dark bg-opacity-75 shadow-lg mx-auto"
+                                style="backdrop-filter: blur(10px);">
+                                <div class="position-absolute top-50 start-50 translate-middle rounded-circle bg-warning opacity-25 blur-3"
+                                    style="width: 150px; height: 150px; z-index: -1;"></div>
+                                <i class="fas fa-gem fa-3x text-warning mb-2 animate-float"></i>
+                                <h5 class="text-white mb-0 fw-bold" style="font-family: var(--font-display);">PREMIUM
+                                    QUALITY</h5>
+                                <div class="small text-white-50">Best Selling Service</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 position-relative">
-                        <!-- Placeholder for the arched image -->
-                        <img src="https://placehold.co/400x500/222/fff?text=Workspace" alt="Workspace"
-                            class="arched-image img-fluid shadow-lg">
+                    <div class="col-lg-6 position-relative text-center d-none d-lg-block">
+                        <!-- CSS Card Stack Visual -->
+                        <div class="position-relative d-inline-block animate-float"
+                            style="width: 300px; height: 400px; margin-top: 50px;">
+                            <!-- Glow -->
+                            <div class="position-absolute top-50 start-50 translate-middle rounded-circle opacity-20 blur-3"
+                                style="width: 400px; height: 400px; background: radial-gradient(circle, var(--accent-gold) 0%, transparent 70%); filter: blur(60px); z-index: 0;">
+                            </div>
+
+                            <!-- Card 3 (Back) -->
+                            <div class="position-absolute top-0 start-50 translate-middle-x bg-black border border-secondary rounded-4 shadow-lg p-3"
+                                style="width: 240px; height: 320px; transform: rotate(-12deg) translateY(25px); z-index: 1; opacity: 0.4;">
+                                <div class="w-100 h-100 border border-white opacity-10 rounded-3"></div>
+                            </div>
+
+                            <!-- Card 2 (Middle) -->
+                            <div class="position-absolute top-0 start-50 translate-middle-x bg-dark border border-secondary rounded-4 shadow-lg p-3"
+                                style="width: 250px; height: 330px; transform: rotate(6deg) translateY(12px); z-index: 2; opacity: 0.7;">
+                                <div
+                                    class="border-bottom border-white opacity-25 pb-2 mb-2 text-start text-white-50 extra-small">
+                                    Pro Pack</div>
+                                <div class="w-100 h-50 bg-white opacity-5 rounded-3 mb-2"></div>
+                            </div>
+
+                            <!-- Card 1 (Front - Main) -->
+                            <div class="position-absolute top-0 start-50 translate-middle-x rounded-4 shadow-lg p-4 d-flex flex-column justify-content-between"
+                                style="width: 280px; height: 360px; transform: rotate(-4deg); z-index: 3; background: linear-gradient(145deg, #151515 0%, #050505 100%); border: 1px solid rgba(212, 175, 55, 0.5); box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+
+                                <!-- Glossy Shine Overlay -->
+                                <div class="position-absolute top-0 start-0 w-100 h-100 rounded-4"
+                                    style="background: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 70%); pointer-events: none;">
+                                </div>
+
+                                <div class="text-start position-relative">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <i class="fas fa-gem text-warning fa-2x animate-pulse"></i>
+                                        <span class="badge bg-warning text-dark shadow-sm">ELITE</span>
+                                    </div>
+                                    <h3 class="h3 text-white mb-1 fw-bold"
+                                        style="font-family: var(--font-display); letter-spacing: 1px;">PREMIUM</h3>
+                                    <p class="text-white-50 small mb-0">Website Solutions</p>
+                                </div>
+
+                                <div class="mt-auto text-start position-relative">
+                                    <div class="d-flex align-items-center mb-3 text-white small">
+                                        <div class="bg-success rounded-circle p-1 me-2 d-flex align-items-center justify-content-center"
+                                            style="width: 16px; height: 16px;"><i
+                                                class="fas fa-check extra-small text-white" style="font-size: 8px;"></i>
+                                        </div>
+                                        Custom UI/UX
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3 text-white small">
+                                        <div class="bg-success rounded-circle p-1 me-2 d-flex align-items-center justify-content-center"
+                                            style="width: 16px; height: 16px;"><i
+                                                class="fas fa-check extra-small text-white" style="font-size: 8px;"></i>
+                                        </div>
+                                        SEO Pro
+                                    </div>
+                                    <div class="d-flex align-items-center mb-0 text-white small">
+                                        <div class="bg-success rounded-circle p-1 me-2 d-flex align-items-center justify-content-center"
+                                            style="width: 16px; height: 16px;"><i
+                                                class="fas fa-check extra-small text-white" style="font-size: 8px;"></i>
+                                        </div>
+                                        Priority Support
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Feature Badges -->
-                <div class="row text-center mb-5 border-top border-bottom border-dark py-4 g-0">
-                    <div class="col-md-4 border-end border-dark px-3">
-                        <div class="d-flex align-items-center justify-content-center gap-3">
-                            <i class="fas fa-desktop fa-2x"></i>
-                            <div class="text-start">
-                                <h5 class="fw-bold mb-0">100%</h5>
-                                <p class="mb-0 small lh-sm">mobile<br>desktop</p>
-                            </div>
+                <div class="row text-center mb-5 py-5 g-4 position-relative animate-fade-in-up delay-400"
+                    style="z-index: 1;">
+                    <div class="col-md-4 feature-box position-relative">
+                        <div
+                            class="p-4 h-100 rounded-4 border border-secondary bg-dark bg-opacity-25 hover-scale transition-all">
+                            <i class="fas fa-desktop fa-3x mb-3 text-warning"></i>
+                            <h5 class="fw-bold text-white mb-2">100% Responsif</h5>
+                            <p class="mb-0 small text-white-50">Tampilan sempurna di semua perangkat (Desktop, Tablet,
+                                Mobile)</p>
                         </div>
                     </div>
-                    <div class="col-md-4 border-end border-dark px-3">
-                        <div class="d-flex align-items-center justify-content-center gap-3">
-                            <i class="fas fa-cogs fa-2x"></i>
-                            <div class="text-start">
-                                <h5 class="fw-bold mb-0">100%</h5>
-                                <p class="mb-0 small lh-sm">sistem<br>matis</p>
-                            </div>
+                    <div class="col-md-4 feature-box position-relative">
+                        <div
+                            class="p-4 h-100 rounded-4 border border-secondary bg-dark bg-opacity-25 hover-scale transition-all">
+                            <i class="fas fa-rocket fa-3x mb-3 text-warning"></i>
+                            <h5 class="fw-bold text-white mb-2">Performa Cepat</h5>
+                            <p class="mb-0 small text-white-50">Optimasi kecepatan loading dan struktur kode yang
+                                efisien</p>
                         </div>
                     </div>
-                    <div class="col-md-4 px-3">
-                        <div class="d-flex align-items-center justify-content-center gap-3">
-                            <i class="fas fa-camera fa-2x"></i>
-                            <div class="text-start">
-                                <h5 class="fw-bold mb-0">100%</h5>
-                                <p class="mb-0 small lh-sm">desain photo<br>modern dan berkelas<br>dan lain</p>
-                            </div>
+                    <div class="col-md-4 feature-box position-relative">
+                        <div
+                            class="p-4 h-100 rounded-4 border border-secondary bg-dark bg-opacity-25 hover-scale transition-all">
+                            <i class="fas fa-paint-brush fa-3x mb-3 text-warning"></i>
+                            <h5 class="fw-bold text-white mb-2">Desain Eksklusif</h5>
+                            <p class="mb-0 small text-white-50">Visual modern yang disesuaikan dengan identitas brand
+                                Anda</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Pricing Table -->
-                <div class="row">
+                <div class="row position-relative animate-fade-in-up delay-500" style="z-index: 1;">
                     <div class="col-12">
-                        <div class="pricing-table-wrapper">
-                            <!-- Table Header -->
-                            <div class="d-flex justify-content-between align-items-end mb-3 px-3 pricing-header-row">
-                                <h2 class="mb-0 pricing-col-title">item description</h2>
-                                <div class="d-flex gap-5">
-                                    <h2 class="mb-0 pricing-col-title text-end" style="min-width: 80px;">bagus</h2>
-                                    <h2 class="mb-0 pricing-col-title text-end" style="min-width: 100px;">lebih bagus
-                                    </h2>
+                        <div class="p-4 p-md-5 rounded-4 shadow-lg border border-secondary position-relative overflow-hidden"
+                            style="background: rgba(20, 20, 20, 0.8); backdrop-filter: blur(20px);">
+
+                            <!-- Detailed Pricing Header -->
+                            <div
+                                class="row align-items-center border-bottom border-light border-opacity-10 pb-4 mb-4 text-center text-md-start">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <h3 class="text-white mb-1"><i class="fas fa-list-ul text-warning me-2"></i>Rincian
+                                        Paket</h3>
+                                    <p class="text-white-50 small mb-0">Bandingkan fitur dan harga untuk pilihan terbaik
+                                        Anda.</p>
+                                </div>
+                                <div class="col-6 col-md-3 text-center">
+                                    <div
+                                        class="py-2 px-3 rounded-pill bg-secondary bg-opacity-25 border border-secondary">
+                                        <span class="text-white fw-bold">Standar</span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 text-center">
+                                    <div class="py-2 px-3 rounded-pill bg-warning bg-opacity-10 border border-warning">
+                                        <span class="text-warning fw-bold"><i
+                                                class="fas fa-crown me-1"></i>Premium</span>
+                                    </div>
                                 </div>
                             </div>
 
-                            <!-- Rows -->
-                            <div class="pricing-list-item">
-                                <div class="d-flex align-items-center">
-                                    <span class="pricing-star">✻</span> <span>landingpage</span>
+                            <!-- Pricing Rows -->
+                            <div class="pricing-rows-container">
+                                <!-- Row 1 -->
+                                <div
+                                    class="row align-items-center py-3 border-bottom border-light border-opacity-10 hover-bg-light-5 transition-all">
+                                    <div class="col-md-6 mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-dark rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px;">
+                                                <i class="fas fa-laptop-code text-white small"></i>
+                                            </div>
+                                            <div>
+                                                <span class="fw-bold text-white d-block">Landing Page</span>
+                                                <span class="small text-white-50">Halaman utama yang informatif &
+                                                    menarik</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-white">Rp 100K</span></div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-warning">Rp 120K</span></div>
                                 </div>
-                                <div class="d-flex gap-5 fw-bold font-monospace">
-                                    <span style="min-width: 80px; text-align: right;">100K</span>
-                                    <span style="min-width: 100px; text-align: right;">120K</span>
+
+                                <!-- Row 2 -->
+                                <div
+                                    class="row align-items-center py-3 border-bottom border-light border-opacity-10 hover-bg-light-5 transition-all">
+                                    <div class="col-md-6 mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-dark rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px;">
+                                                <i class="fas fa-qrcode text-white small"></i>
+                                            </div>
+                                            <div>
+                                                <span class="fw-bold text-white d-block">Barcode Pemesanan</span>
+                                                <span class="small text-white-50">Integrasi langsung ke WhatsApp</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-white">Rp 20K</span></div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-warning">Rp 40K</span></div>
+                                </div>
+
+                                <!-- Row 3 -->
+                                <div
+                                    class="row align-items-center py-3 border-bottom border-light border-opacity-10 hover-bg-light-5 transition-all">
+                                    <div class="col-md-6 mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-dark rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px;">
+                                                <i class="fas fa-bullhorn text-white small"></i>
+                                            </div>
+                                            <div>
+                                                <span class="fw-bold text-white d-block">Call to Action (CTA)</span>
+                                                <span class="small text-white-50">Tombol konversi yang efektif</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-white">Rp 50K</span></div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-warning">Rp 50K</span></div>
+                                </div>
+
+                                <!-- Row 4 -->
+                                <div
+                                    class="row align-items-center py-3 border-bottom border-light border-opacity-10 hover-bg-light-5 transition-all">
+                                    <div class="col-md-6 mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-dark rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px;">
+                                                <i class="fas fa-file-alt text-white small"></i>
+                                            </div>
+                                            <div>
+                                                <span class="fw-bold text-white d-block">Halaman Tambahan</span>
+                                                <span class="small text-white-50">Ekspansi konten sesuai
+                                                    kebutuhan</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-white">Rp 50K</span></div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-warning">Rp 80K</span></div>
+                                </div>
+
+                                <!-- Row 5 -->
+                                <div
+                                    class="row align-items-center py-3 border-bottom border-light border-opacity-10 hover-bg-light-5 transition-all">
+                                    <div class="col-md-6 mb-2 mb-md-0">
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-dark rounded-circle p-2 me-3 d-flex align-items-center justify-content-center"
+                                                style="width: 40px; height: 40px;">
+                                                <i class="fas fa-box-open text-white small"></i>
+                                            </div>
+                                            <div>
+                                                <span class="fw-bold text-white d-block">Halaman Paket</span>
+                                                <span class="small text-white-50">Detail katalog produk/jasa</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-white">Rp 70K</span></div>
+                                    <div class="col-6 col-md-3 text-end text-md-center"><span
+                                            class="fw-bold text-warning">Rp 100K</span></div>
                                 </div>
                             </div>
 
-                            <div class="pricing-list-item">
-                                <div class="d-flex align-items-center">
-                                    <span class="pricing-star">✻</span> <span>barkot pemesanan paket</span>
-                                </div>
-                                <div class="d-flex gap-5 fw-bold font-monospace">
-                                    <span style="min-width: 80px; text-align: right;">20K</span>
-                                    <span style="min-width: 100px; text-align: right;">40K</span>
-                                </div>
-                            </div>
-
-                            <div class="pricing-list-item">
-                                <div class="d-flex align-items-center">
-                                    <span class="pricing-star">✻</span> <span>call to action</span>
-                                </div>
-                                <div class="d-flex gap-5 fw-bold font-monospace">
-                                    <span style="min-width: 80px; text-align: right;">50K</span>
-                                    <span style="min-width: 100px; text-align: right;">50K</span>
-                                </div>
-                            </div>
-
-                            <div class="pricing-list-item">
-                                <div class="d-flex align-items-center">
-                                    <span class="pricing-star">✻</span> <span>halaman lain kecuali paket</span>
-                                </div>
-                                <div class="d-flex gap-5 fw-bold font-monospace">
-                                    <span style="min-width: 80px; text-align: right;">50K</span>
-                                    <span style="min-width: 100px; text-align: right;">80K</span>
-                                </div>
-                            </div>
-
-                            <div class="pricing-list-item border-bottom-0">
-                                <div class="d-flex align-items-center">
-                                    <span class="pricing-star">✻</span> <span>halaman paket</span>
-                                </div>
-                                <div class="d-flex gap-5 fw-bold font-monospace">
-                                    <span style="min-width: 80px; text-align: right;">70K</span>
-                                    <span style="min-width: 100px; text-align: right;">100K</span>
+                            <!-- Footer / CTA -->
+                            <div class="mt-5 text-center">
+                                <a href="https://wa.me/6281259953779"
+                                    class="btn btn-primary btn-lg w-100 w-md-50 rounded-pill px-5 shadow-lg hover-scale fw-bold text-uppercase d-inline-flex align-items-center justify-content-center bg-gradient-gold border-0">
+                                    <i class="fab fa-whatsapp me-2 fa-lg"></i> Pesan Sekarang via WhatsApp
+                                </a>
+                                <div
+                                    class="mt-4 text-white-50 small font-monospace d-flex justify-content-center gap-4 flex-wrap">
+                                    <span><i class="fab fa-whatsapp text-success me-1"></i> 0812-5995-3779</span>
+                                    <span><i class="fab fa-whatsapp text-success me-1"></i> 0822-4594-2611</span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="mt-4 pt-3 border-top border-dark font-monospace">
-                            081259953779 / 082245942611
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -308,47 +602,68 @@
             </div>
             <!-- Desktop View (Grid) -->
             <div class="row g-3 d-none d-md-flex">
-                <div class="col-md-4">
-                    <img src="https://placehold.co/600x400/333/fff?text=Portfolio+1"
-                        class="img-fluid portfolio-grid-img" alt="Project 1" loading="lazy">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://placehold.co/600x400/444/fff?text=Portfolio+2"
-                        class="img-fluid portfolio-grid-img" alt="Project 2" loading="lazy">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://placehold.co/600x400/555/fff?text=Portfolio+3"
-                        class="img-fluid portfolio-grid-img" alt="Project 3">
+                <!-- Row 1: 2 Landscape -->
+                <div class="col-md-6">
+                    <img src="https://placehold.co/800x500/0A0A0A/D4AF37?text=Project+Landscape+1"
+                        class="img-fluid w-100 portfolio-grid-img object-fit-cover" style="height: 300px;"
+                        alt="Project 1">
                 </div>
                 <div class="col-md-6">
-                    <img src="img/34.png" class="img-fluid portfolio-grid-img" alt="Project 4">
+                    <img src="https://placehold.co/800x500/141414/D4AF37?text=Project+Landscape+2"
+                        class="img-fluid w-100 portfolio-grid-img object-fit-cover" style="height: 300px;"
+                        alt="Project 2">
                 </div>
-                <div class="col-md-6">
-                    <img src="img/43.png" class="img-fluid portfolio-grid-img" alt="Project 5">
+
+                <!-- Row 2: 3 Portrait -->
+                <div class="col-md-4">
+                    <img src="https://placehold.co/400x600/0A0A0A/F2F0E4?text=Project+Portrait+1"
+                        class="img-fluid w-100 portfolio-grid-img object-fit-cover" style="height: 500px;"
+                        alt="Project 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://placehold.co/400x600/141414/F2F0E4?text=Project+Portrait+2"
+                        class="img-fluid w-100 portfolio-grid-img object-fit-cover" style="height: 500px;"
+                        alt="Project 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://placehold.co/400x600/0A0A0A/F2F0E4?text=Project+Portrait+3"
+                        class="img-fluid w-100 portfolio-grid-img object-fit-cover" style="height: 500px;"
+                        alt="Project 5">
                 </div>
             </div>
 
             <!-- Mobile View (Carousel) -->
             <div id="portfolioCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
                 <div class="carousel-inner">
+                    <!-- Item 1: Landscape -->
                     <div class="carousel-item active">
-                        <img src="https://placehold.co/600x400/333/fff?text=Portfolio+1"
-                            class="d-block w-100 rounded shadow-sm" alt="Project 1">
+                        <img src="https://placehold.co/800x500/0A0A0A/D4AF37?text=Project+Landscape+1"
+                            class="d-block w-100 rounded shadow-sm object-fit-cover" style="height: 250px;"
+                            alt="Project 1">
                     </div>
+                    <!-- Item 2: Landscape -->
                     <div class="carousel-item">
-                        <img src="https://placehold.co/600x400/444/fff?text=Portfolio+2"
-                            class="d-block w-100 rounded shadow-sm" alt="Project 2">
+                        <img src="https://placehold.co/800x500/141414/D4AF37?text=Project+Landscape+2"
+                            class="d-block w-100 rounded shadow-sm object-fit-cover" style="height: 250px;"
+                            alt="Project 2">
                     </div>
+                    <!-- Item 3: Portrait -->
                     <div class="carousel-item">
-                        <img src="https://placehold.co/600x400/555/fff?text=Portfolio+3"
-                            class="d-block w-100 rounded shadow-sm" alt="Project 3">
+                        <img src="https://placehold.co/400x600/0A0A0A/F2F0E4?text=Project+Portrait+1"
+                            class="d-block w-100 rounded shadow-sm object-fit-cover" style="height: 400px;"
+                            alt="Project 3">
                     </div>
+                    <!-- Item 4: Portrait -->
                     <div class="carousel-item">
-                        <img src="https://placehold.co/600x300/666/fff?text=Portfolio+4"
-                            class="d-block w-100 rounded shadow-sm" alt="Project 4">
+                        <img src="https://placehold.co/400x600/141414/F2F0E4?text=Project+Portrait+2"
+                            class="d-block w-100 rounded shadow-sm object-fit-cover" style="height: 400px;"
+                            alt="Project 4">
                     </div>
+                    <!-- Item 5: Portrait -->
                     <div class="carousel-item">
-                        <img src="img/43.png" class="d-block w-100 rounded shadow-sm" alt="Project 5">
+                        <img src="https://placehold.co/400x600/0A0A0A/F2F0E4?text=Project+Portrait+3"
+                            class="d-block w-100 rounded shadow-sm object-fit-cover" style="height: 400px;"
+                            alt="Project 5">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarouselMobile"
@@ -366,52 +681,65 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="bg-light">
+    <section id="team">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Kata Klien Kami</h2>
+                <span class="text-primary fw-bold text-uppercase">Ahli Kami</span>
+                <h2 class="fw-bold display-5 mb-4">Tim Web Developer</h2>
+                <div class="divider-gold mx-auto mb-4"
+                    style="width: 100px; height: 2px; background: var(--accent-gold);"></div>
             </div>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8">
-                                <div class="testimonial-card">
-                                    <img src="https://placehold.co/100x100/333/fff?text=User" alt="Client 1"
-                                        class="testimonial-img">
-                                    <p class="fst-italic">"Flowra membantu kami meningkatkan penjualan online sebesar
-                                        200% dalam 3 bulan. Sangat direkomendasikan!"</p>
-                                    <h5 class="mb-0">Budi Santoso</h5>
-                                    <small class="text-muted">CEO, PT Maju Jaya</small>
-                                </div>
+
+            <div class="row g-4">
+                <!-- Member 1 -->
+                <div class="col-6">
+                    <div class="team-card p-2 p-md-4 h-100 position-relative"
+                        style="background: var(--bg-card); border: 1px solid var(--accent-gold); transition: transform 0.3s ease;">
+                        <div class="text-center mb-4">
+                            <div
+                                class="d-inline-block p-1 rounded-circle border border-2 border-primary position-relative">
+                                <img src="https://placehold.co/150x150/141414/D4AF37?text=Sarah" alt="Sarah Wijaya"
+                                    class="rounded-circle" width="140" height="140">
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8">
-                                <div class="testimonial-card">
-                                    <img src="https://placehold.co/100x100/333/fff?text=User" alt="Client 2"
-                                        class="testimonial-img">
-                                    <p class="fst-italic">"Tim yang sangat profesional dan responsif. Desain website
-                                        kami sekarang jauh lebih modern."</p>
-                                    <h5 class="mb-0">Siti Aminah</h5>
-                                    <small class="text-muted">Marketing Manager, Fashion Daily</small>
-                                </div>
-                            </div>
+                        <div class="text-center">
+                            <h4 class="h4 mb-2 text-uppercase"
+                                style="font-family: var(--font-display); letter-spacing: 1px;">Sarah Wijaya</h4>
+                            <p class="text-primary small text-uppercase mb-3"
+                                style="letter-spacing: 2px; font-size: 0.75rem;">Lead UI/UX Designer</p>
+                            <p class="text-muted mb-4 small">"Menciptakan pengalaman pengguna yang intuitif dan visual
+                                yang memukau."</p>
+                            <a href="#"
+                                class="text-primary text-decoration-none text-uppercase small border-bottom border-primary pb-1 hover-gold"
+                                style="font-size: 0.7rem; letter-spacing: 1px;">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+                <!-- Member 2 -->
+                <div class="col-6">
+                    <div class="team-card p-2 p-md-4 h-100 position-relative"
+                        style="background: var(--bg-card); border: 1px solid var(--accent-gold); transition: transform 0.3s ease;">
+                        <div class="text-center mb-4">
+                            <div
+                                class="d-inline-block p-1 rounded-circle border border-2 border-primary position-relative">
+                                <img src="https://placehold.co/150x150/141414/D4AF37?text=Rian" alt="Rian Ardianto"
+                                    class="rounded-circle" width="140" height="140">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="h4 mb-2 text-uppercase"
+                                style="font-family: var(--font-display); letter-spacing: 1px;">Rian Ardianto</h4>
+                            <p class="text-primary small text-uppercase mb-3"
+                                style="letter-spacing: 2px; font-size: 0.75rem;">Senior Fullstack Dev</p>
+                            <p class="text-muted mb-4 small">"Kode yang bersih dan efisien adalah fondasi dari setiap
+                                website sukses."</p>
+                            <a href="#"
+                                class="text-primary text-decoration-none text-uppercase small border-bottom border-primary pb-1 hover-gold"
+                                style="font-size: 0.7rem; letter-spacing: 1px;">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -498,49 +826,97 @@
 
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row gy-4">
+    <!-- Footer -->
+    <footer style="background-color: #050505; border-top: 3px solid var(--accent-gold);">
+        <div class="container pt-5 pb-4">
+            <div class="row gy-5">
+                <!-- Brand Column -->
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="fw-bold mb-3 text-white"><i class="fas fa-leaf me-2"></i>FLOWRA</h4>
-                    <p class="text-muted">Partner digital terpercaya untuk pertumbuhan bisnis Anda. Kami mengutamakan
-                        kualitas, kecepatan, dan kepuasan pelanggan.</p>
+                    <h3 class="fw-bold mb-4 text-uppercase"
+                        style="font-family: var(--font-display); color: var(--accent-gold); letter-spacing: 2px;">
+                        <i class="fas fa-gem me-2"></i>Web Studio
+                    </h3>
+                    <p class="text-white-50 mb-4" style="line-height: 1.8;">
+                        Partner digital eksklusif untuk pertumbuhan bisnis Anda. Kami menghadirkan solusi website
+                        premium dengan desain berkelas dan performa tinggi.
+                    </p>
                     <div class="d-flex gap-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-0 d-flex align-items-center justify-content-center hover-gold"
+                            style="width: 40px; height: 40px; border-color: var(--accent-gold); color: var(--accent-gold);">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-0 d-flex align-items-center justify-content-center hover-gold"
+                            style="width: 40px; height: 40px; border-color: var(--accent-gold); color: var(--accent-gold);">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle p-0 d-flex align-items-center justify-content-center hover-gold"
+                            style="width: 40px; height: 40px; border-color: var(--accent-gold); color: var(--accent-gold);">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Tautan</h5>
+
+                <!-- Links Column -->
+                <div class="col-lg-2 col-md-6 offset-lg-1">
+                    <h5 class="text-uppercase mb-4" style="color: var(--accent-gold); letter-spacing: 1px;">Menu</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#hero">Beranda</a></li>
-                        <li class="mb-2"><a href="#about">Tentang Kami</a></li>
-                        <li class="mb-2"><a href="#services">Layanan</a></li>
-                        <li class="mb-2"><a href="#portfolio">Portofolio</a></li>
+                        <li class="mb-3"><a href="#hero"
+                                class="text-white-50 text-decoration-none hover-gold transition-all">Beranda</a></li>
+                        <li class="mb-3"><a href="#team"
+                                class="text-white-50 text-decoration-none hover-gold transition-all">Tim Kami</a></li>
+                        <li class="mb-3"><a href="#products"
+                                class="text-white-50 text-decoration-none hover-gold transition-all">Layanan</a></li>
+                        <li class="mb-3"><a href="#portfolio"
+                                class="text-white-50 text-decoration-none hover-gold transition-all">Portofolio</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-3">Bantuan</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#faq">FAQ</a></li>
-                        <li class="mb-2"><a href="#">Syarat & Ketentuan</a></li>
-                        <li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+
+                <!-- Contact Column -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4" style="color: var(--accent-gold); letter-spacing: 1px;">Kontak</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
+                            <span>Jakarta Selatan, Indonesia</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-phone-alt me-3 text-primary"></i>
+                            <span>+62 812-5995-3779</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fas fa-envelope me-3 text-primary"></i>
+                            <span>hello@webstudio.id</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-3">Newsletter</h5>
-                    <p class="text-muted">Dapatkan berita terbaru dari kami.</p>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email Anda" aria-label="Email Anda">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-uppercase mb-4" style="color: var(--accent-gold); letter-spacing: 1px;">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none hover-gold">FAQ</a></li>
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none hover-gold">Privacy
+                                Policy</a></li>
+                        <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none hover-gold">Terms of
+                                Service</a></li>
+                    </ul>
                 </div>
             </div>
-            <hr class="my-4 border-secondary">
-            <div class="text-center text-muted">
-                <p class="mb-0">&copy; 2026 Flowra. All Rights Reserved.</p>
+
+            <hr class="my-5" style="border-color: rgba(212, 175, 55, 0.3);">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-white-50 small">&copy; 2026 <span style="color: var(--accent-gold);">Web
+                            Studio</span>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-white-50 small">Designed with <i class="fas fa-heart text-danger mx-1"></i> for
+                        Greatness</p>
+                </div>
             </div>
         </div>
     </footer>
@@ -548,11 +924,12 @@
     <!-- Floating Action Buttons -->
     <div class="fab-container">
         <!-- Scroll to Top -->
-        <a href="#hero" class="fab fab-top" title="Kembali ke Atas">
+        <a href="#hero" class="floating-action-btn fab-top" title="Kembali ke Atas">
             <i class="fas fa-arrow-up"></i>
         </a>
         <!-- WhatsApp -->
-        <a href="https://wa.me/6281234567890" class="fab fab-whatsapp" target="_blank" title="Hubungi via WhatsApp">
+        <a href="https://wa.me/6281234567890" class="floating-action-btn fab-whatsapp" target="_blank"
+            title="Hubungi via WhatsApp">
             <i class="fab fa-whatsapp fa-lg"></i>
         </a>
     </div>

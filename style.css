@@ -1,425 +1,660 @@
 :root {
-    --primary-color: #2E8B57;
-    /* SeaGreen - Nature vibe */
-    --secondary-color: #f8f9fa;
-    /* Light Gray */
-    --accent-color: #FF7F50;
-    /* Coral - Pop of color */
-    --text-dark: #333333;
-    --text-light: #ffffff;
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
-    --font-serif: 'Playfair Display', serif;
-    --font-script: 'Dancing Script', cursive;
+    /* --- Art Deco Color Tokens --- */
+    --bg-dark: #0A0A0A;
+    /* Obsidian Black */
+    --bg-card: #141414;
+    /* Rich Charcoal */
+    --fg-primary: #F2F0E4;
+    /* Champagne Cream - Text */
+    --accent-gold: #D4AF37;
+    /* Metallic Gold */
+    --accent-gold-light: #F2E8C4;
+    --accent-blue: #1E3D59;
+    /* Midnight Blue */
+    --text-muted: #888888;
+    /* Pewter */
+
+    /* --- Typography Tokens --- */
+    --font-heading: 'Marcellus', serif;
+    --font-display: 'Italiana', serif;
+    --font-body: 'Josefin Sans', sans-serif;
+
+    /* --- Spacing & Layout --- */
+    --section-padding: 8rem 0;
+    /* Generous breathing room (py-32 equivalent) */
+    --container-width-lg: 1152px;
+    /* max-w-6xl */
+
+    /* --- Art Deco Signatures --- */
+    --border-gold: 1px solid var(--accent-gold);
+    --border-gold-thick: 2px solid var(--accent-gold);
+    --glow-gold: 0 0 15px rgba(212, 175, 55, 0.2);
+    --glow-gold-intense: 0 0 25px rgba(212, 175, 55, 0.4);
+
+    /* --- Shadows (Custom) --- */
+    --shadow-deco: var(--glow-gold);
 }
 
+/* --- Global Reset & Art Deco Base --- */
 html,
 body {
+    background-color: var(--bg-dark);
+    color: var(--fg-primary);
     font-family: var(--font-body);
-    color: var(--text-dark);
+    font-weight: 300;
+    line-height: 1.7;
     overflow-x: hidden;
-    /* Prevent horizontal scroll */
-    width: 100%;
 }
 
-/* ... */
-
-/* Pricing / Products Redesign */
-.pricing-container {
-    background-color: #f4f4f4;
-    padding: 3rem;
-    border-radius: 10px;
-    font-family: 'Courier New', monospace;
-    /* Removed overflow-x: auto from here, handled by wrapper */
-}
-
-.pricing-header-text {
-    font-family: var(--font-serif);
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 0.8;
-}
-
-.pricing-sub-text {
-    font-family: var(--font-script);
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin-left: 20px;
-}
-
-.arched-image {
-    width: 60%;
-    margin-left: auto;
-    border-top-left-radius: 15rem;
-    border-top-right-radius: 15rem;
-    object-fit: cover;
-    display: block;
-}
-
-.feature-icon-box {
-    text-align: center;
-    border: 1px solid #333;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.feature-icon-box i {
-    font-size: 2rem;
-    margin-bottom: 5px;
-}
-
-.pricing-list-item {
-    border-bottom: 1px solid #333;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    /* Prevent wrapping but allow scroll container */
-}
-
-/* Hero */
-#hero {
-    background: linear-gradient(135deg, rgba(235, 247, 238, 0.9) 0%, rgba(255, 255, 255, 1) 100%);
-    padding: 120px 0;
-    /* More breathing room on desktop */
-    position: relative;
-    overflow: hidden;
-}
-
-#hero h1 {
-    font-size: 3.5rem;
-    /* Larger title */
-    line-height: 1.2;
-}
-
-#hero img {
-    border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    /* Softer, deeper shadow */
-    transition: transform 0.3s ease;
-}
-
-#hero img:hover {
-    transform: translateY(-5px);
-}
-
-/* About Section */
-#about {
-    position: relative;
-    background-color: #fff !important;
-    /* Force white background for cleanliness */
-}
-
-#about img {
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Services */
-/* Services */
-.service-card {
-    padding: 50px 30px;
-    background: #fff;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    height: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.service-icon {
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
-    background: linear-gradient(135deg, rgba(46, 139, 87, 0.1) 0%, rgba(46, 139, 87, 0.2) 100%);
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    display: inline-block;
-    transition: all 0.4s ease;
-}
-
-.service-card:hover .service-icon {
-    background: var(--primary-color);
-    color: #fff;
-    transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 10px 20px rgba(46, 139, 87, 0.4);
-}
-
-.service-card h4 {
-    margin-bottom: 15px;
-    font-weight: 700;
-    transition: color 0.3s ease;
-}
-
-.service-card:hover h4 {
-    color: var(--primary-color);
-}
-
-.pricing-col-title {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    border-bottom: none;
-}
-
-.pricing-star {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-/* Testimonials */
-.testimonial-card {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    text-align: center;
-}
-
-.testimonial-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover;
-}
-
-/* CTA Primary */
-.cta-primary {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1e5c39 100%);
-    color: white;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-primary::before {
-    content: '';
-    position: absolute;
+/* Diagonal Background Texture */
+body::before {
+    content: "";
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/cubes.png');
-    /* Subtle pattern */
-    opacity: 0.1;
+    /* Subtle crosshatch pattern */
+    background: repeating-linear-gradient(45deg,
+            rgba(212, 175, 55, 0.03),
+            rgba(212, 175, 55, 0.03) 1px,
+            transparent 1px,
+            transparent 10px),
+        repeating-linear-gradient(-45deg,
+            rgba(212, 175, 55, 0.03),
+            rgba(212, 175, 55, 0.03) 1px,
+            transparent 1px,
+            transparent 10px);
+    pointer-events: none;
+    z-index: -1;
 }
 
-.cta-primary h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    /* Wide tracking */
+    margin-bottom: 1.5rem;
 }
 
-.cta-primary p {
-    font-size: 1.25rem;
-    opacity: 0.9;
-    max-width: 700px;
-    margin: 0 auto 40px;
-    font-weight: 300;
+h1.display-3,
+h1.display-4 {
+    font-family: var(--font-display);
+    letter-spacing: 0.2em;
+    /* Extreme tracking for hero */
 }
 
-/* CTA Secondary */
-/* CTA Secondary */
-.cta-secondary {
-    background-color: #f9f9f9;
-    padding: 100px 0;
+a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-gold-light);
+    text-shadow: var(--glow-gold);
+}
+
+section {
+    padding: var(--section-padding);
     position: relative;
 }
 
-.cta-secondary .cta-card {
-    background: white;
-    padding: 60px 40px;
-    border-radius: 30px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
-    max-width: 800px;
-    margin: 0 auto;
+/* Divider Lines for Sections */
+section::after {
+    /* Subtle separator line */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    opacity: 0.5;
+}
+
+
+/* --- Navbar Overrides --- */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.95) !important;
+    /* Force dark bg */
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 0;
+    transition: all 0.4s ease;
+    z-index: 1030;
+    /* Ensure it stays on top */
+}
+
+.navbar.scrolled {
+    padding: 0.8rem 0;
+    /* Shrink on scroll */
+    background-color: rgba(5, 5, 5, 0.98) !important;
+    /* Darker/Opaque */
+    border-bottom: 1px solid var(--accent-gold);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    color: var(--accent-gold) !important;
+    font-family: var(--font-display);
+    letter-spacing: 0.2em;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.nav-link {
+    color: var(--fg-primary) !important;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    margin-left: 2rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-gold) !important;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* --- Button Component (Art Deco) --- */
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: transparent;
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-radius: 0 !important;
+    /* Sharp corners */
+    padding: 1rem 2.5rem;
     position: relative;
     overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: var(--glow-gold);
 }
 
-.cta-secondary .cta-card::before {
-    content: '';
+.btn-primary:hover {
+    background-color: var(--accent-gold);
+    color: var(--bg-dark);
+    box-shadow: var(--glow-gold-intense);
+    transform: translateY(-2px);
+    border-color: var(--accent-gold);
+}
+
+.btn-outline-dark {
+    border: 1px solid var(--accent-gold);
+    color: var(--fg-primary);
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-family: var(--font-heading);
+    padding: 1rem 2.5rem;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--accent-blue);
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+/* --- Hero Section --- */
+#hero {
+    background: radial-gradient(circle at center, rgba(30, 61, 89, 0.2) 0%, var(--bg-dark) 70%);
+    position: relative;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+/* Sunburst Effect behind Hero Text (Pseudo-element) */
+#hero::before {
+    content: "";
     position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 150px;
-    height: 150px;
-    background: var(--primary-color);
-    opacity: 0.05;
-    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
 }
 
-.cta-secondary h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: var(--text-dark);
+#hero h1,
+#hero p,
+#hero .btn {
+    position: relative;
+    z-index: 1;
 }
 
-.cta-secondary p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 30px;
+#hero img {
+    border-radius: 0;
+    border: 1px solid var(--accent-gold);
+    padding: 10px;
+    /* Double frame effect */
+    background: var(--bg-card);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    filter: grayscale(80%) sepia(20%);
+    /* Vintage feel */
+    transition: all 0.5s ease;
 }
 
-/* FAB */
-.fab-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#hero img:hover {
+    filter: grayscale(0%);
+    box-shadow: var(--glow-gold);
 }
 
-.fab {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: white;
+
+/* --- About Section --- */
+#about {
+    background-color: var(--bg-dark) !important;
+}
+
+/* --- Cards (Geometric Containers) --- */
+.service-card,
+.pricing-container,
+.testimonial-card,
+.cta-card {
+    background-color: var(--bg-card) !important;
+    border: 1px solid rgba(212, 175, 55, 0.3) !important;
+    border-radius: 0 !important;
+    /* Remove Bootstrap radius */
+    color: var(--fg-primary);
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+/* Stepped Corner Effect (using pseudo-elements as accents) */
+.service-card::before,
+.pricing-container::before,
+.testimonial-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid var(--accent-gold);
+    border-left: 2px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+
+.service-card::after,
+.pricing-container::after,
+.testimonial-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid var(--accent-gold);
+    border-right: 2px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glow-gold);
+    border-color: var(--accent-gold) !important;
+}
+
+.service-icon {
+    background: transparent !important;
+    color: var(--accent-gold) !important;
+    border: 1px solid var(--accent-gold);
+    border-radius: 0 !important;
+    transform: rotate(45deg);
+    /* Diamond shape */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 2rem;
+    width: 80px;
+    height: 80px;
+}
+
+.service-icon i {
+    transform: rotate(-45deg);
+    /* Counter-rotate icon */
+}
+
+/* --- Pricing Section (Spec Sheet) --- */
+#products {
+    background-color: var(--bg-dark) !important;
+}
+
+.pricing-container {
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.95)) !important;
+}
+
+.pricing-header-text {
+    font-family: var(--font-display);
+    color: var(--accent-gold);
+    text-transform: uppercase;
+}
+
+.pricing-sub-text {
+    font-family: var(--font-heading);
+    color: var(--fg-primary);
+    letter-spacing: 0.1em;
+}
+
+.arched-image {
+    border-radius: 200px 200px 0 0 !important;
+    /* Keep arch but make it sharper elsewhere */
+    border: 2px solid var(--accent-gold);
+    padding: 5px;
+    background: var(--bg-dark);
+}
+
+.cursor-pointer {
     cursor: pointer;
-    transition: transform 0.3s ease;
+}
+
+/* Pricing Grid Overrides */
+.pricing-grid {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.pricing-col-header {
+    border-bottom: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.text-primary {
+    color: var(--accent-gold) !important;
+}
+
+.text-success {
+    color: var(--accent-gold-light) !important;
+}
+
+/* Reuse gold palette */
+
+/* --- Portfolio --- */
+.portfolio-grid-img {
+    border-radius: 0 !important;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
+}
+
+.portfolio-grid-img:hover {
+    filter: grayscale(0%);
+    border-color: var(--accent-gold);
+    box-shadow: var(--glow-gold);
+}
+
+/* --- CTA Sections --- */
+.cta-primary {
+    background: linear-gradient(45deg, #000, #1a1a1a);
+    /* Dark gradient */
+    border-top: 1px solid var(--accent-gold);
+    border-bottom: 1px solid var(--accent-gold);
+}
+
+.cta-secondary .cta-card {
+    background: var(--bg-card);
+    /* Remove white bg */
+}
+
+/* Input/Form Styles (Art Deco) */
+.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--accent-gold);
+    border-radius: 0;
+    color: var(--fg-primary);
+    padding: 1rem 0;
+}
+
+.form-control:focus {
+    background: transparent;
+    color: var(--fg-primary);
+    border-color: var(--accent-gold-light);
+    box-shadow: 0 5px 10px -5px rgba(212, 175, 55, 0.3);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #050505;
+    border-top: 4px double var(--accent-gold);
+}
+
+footer h4,
+footer h5 {
+    color: var(--accent-gold);
+    font-family: var(--font-display);
+    letter-spacing: 0.1em;
+}
+
+footer .text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* --- FAB --- */
+
+/* --- FAB (Floating Action Buttons) --- */
+.fab-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.floating-action-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 0 !important;
+    /* Art Deco Diamond */
+    background-color: var(--bg-dark);
+    border: 1px solid var(--accent-gold);
+    color: var(--accent-gold);
+    transform: rotate(45deg);
+    /* Diamond Base State */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 1.5rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.fab:hover {
-    transform: scale(1.1);
-    color: white;
+.floating-action-btn i {
+    transform: rotate(-45deg);
+    /* Counter-rotate icon */
 }
 
-.fab-whatsapp {
-    background-color: #25D366;
+.floating-action-btn:hover {
+    background-color: var(--accent-gold);
+    color: var(--bg-dark);
+    transform: rotate(45deg) scale(1.1);
+    /* Keep rotation, just scale */
 }
 
+/* Scroll to Top Specifics */
 .fab-top {
-    background-color: var(--primary-color);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transform: rotate(45deg) translateY(20px);
+    transition: all 0.4s ease;
 }
 
 .fab-top.show {
     opacity: 1;
     visibility: visible;
+    transform: rotate(45deg) translateY(0);
 }
 
-/* FAQ */
+.fab-whatsapp {
+    background-color: #0A0A0A;
+    /* Dark bg */
+    border-color: #25D366;
+    color: #25D366;
+}
+
+.fab-whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+    border-color: #25D366;
+}
+
+/* Bootstrap Utilities Overrides (Crucial for Dark Mode) */
+.bg-light,
+.bg-white {
+    background-color: var(--bg-dark) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.border-primary {
+    border-color: var(--accent-gold) !important;
+}
+
+
+/* --- Accordion (Art Deco) --- */
 .accordion-item {
+    background-color: transparent !important;
     border: none;
-    margin-bottom: 10px;
-    border-radius: 10px !important;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3) !important;
+    border-radius: 0 !important;
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    padding: 1.5rem 0;
+    box-shadow: none !important;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: transparent;
+    color: var(--accent-gold-light);
+    text-shadow: var(--glow-gold);
 }
 
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    padding: 60px 0 20px;
-}
-
-footer a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: white;
-}
-
-/* Portfolio Desktop Grid */
-.portfolio-grid-img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+.accordion-button::after {
+    filter: invert(74%) sepia(21%) saturate(2320%) hue-rotate(2 deg) brightness(96%) contrast(85%);
+    /* Gold color filter for chevron */
+    background-size: 1rem;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-grid-img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
 }
 
-/* Responsive Fixes */
+.accordion-body {
+    padding: 0 0 1.5rem 0;
+    color: var(--fg-primary);
+    opacity: 0.8;
+}
+
+/* --- Navbar Toggler (Hamburger) --- */
+.navbar-toggler {
+    border-color: var(--accent-gold);
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(212, 175, 55)' stroke-linecap='square' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem var(--accent-gold);
+}
+
+/* --- Utility Classes --- */
+.hover-gold:hover {
+    color: var(--accent-gold) !important;
+    border-color: var(--accent-gold) !important;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 0.2em;
+}
+
+/* --- Mobile Optimizations (Global) --- */
 @media (max-width: 768px) {
+
+    /* Compress headings */
+    h1,
+    .display-3,
+    .display-4,
+    .display-5 {
+        font-size: 2.5rem !important;
+        /* Cap huge fonts */
+    }
+
+    .display-6 {
+        font-size: 1.75rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    /* Reduce section padding */
     section {
-        padding: 50px 0;
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
     }
 
-    #hero {
+    /* Adjust Hero */
+    .hero-section {
+        min-height: auto;
+        /* Allow content to dictate height */
+        padding-top: 8rem !important;
+        /* Space for navbar */
+        padding-bottom: 4rem !important;
+    }
+
+    /* Center align footer on mobile for tidiness */
+    footer .col-lg-4,
+    footer .col-lg-2,
+    footer .col-lg-3 {
         text-align: center;
-        padding-top: 100px;
     }
 
-    #hero h1 {
-        font-size: 2.5rem;
+    footer .d-flex {
+        justify-content: center;
+        /* Center icons */
     }
 
-    #hero img {
-        margin-top: 30px;
+    footer .align-items-start {
+        align-items: center !important;
+        /* stack contact info */
+        flex-direction: column;
     }
 
-    .pricing-container {
-        padding: 1.5rem;
-    }
-
-    .pricing-header-text {
-        font-size: 3rem;
-    }
-
-    .pricing-sub-text {
-        font-size: 2.5rem;
-    }
-
-    .pricing-col-title {
-        font-size: 1rem;
-    }
-
-    /* Make pricing table scrollable horizontally if too wide */
-    .pricing-list-item,
-    .pricing-header-row {
-        min-width: 600px;
-        /* Force minimum width to effectively use scroll */
-    }
-
-    .pricing-table-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .arched-image {
-        width: 100%;
-        margin-top: 20px;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-    }
-
-    /* Reduce gaps in pricing row */
-    .pricing-list-item .d-flex.gap-5 {
-        gap: 1rem !important;
+    footer i.me-3 {
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
     }
 }
